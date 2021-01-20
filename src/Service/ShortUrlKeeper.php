@@ -37,6 +37,11 @@ class ShortUrlKeeper
 
     public function new(string $userId, string $original): ShortUrl
     {
+        $existed = $this->shortUrls->findOneBy(['original' => $original]);
+        if (null !== $existed) {
+            return $existed;
+        }
+
         $url = ShortUrl::fromString($this->users->find($userId), $original);
         $this->em->persist($url);
         $this->em->flush();

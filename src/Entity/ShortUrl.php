@@ -12,10 +12,15 @@ use Ramsey\Uuid\Uuid;
 
 /**
  * @ORM\Entity(repositoryClass=ShortUrlRepository::class)
- * @ORM\Table(indexes={
- *     @ORM\Index(name="ix__short_url__user_id", columns={"user_id"}),
- *     @ORM\Index(name="ix__short_url__created_at", columns={"created_at"}),
- * })
+ * @ORM\Table(
+ *     indexes={
+ *         @ORM\Index(name="ix__short_url__user_id", columns={"user_id"}),
+ *         @ORM\Index(name="ix__short_url__created_at", columns={"created_at"})
+ *     },
+ *     uniqueConstraints={
+ *         @ORM\UniqueConstraint(name="ux__short_url__value__original", columns={"value", "original"})
+ *     }
+ * )
  */
 class ShortUrl
 {
@@ -39,7 +44,7 @@ class ShortUrl
     private User $user;
 
     /**
-     * @ORM\Column(type="string", length=55)
+     * @ORM\Column(type="string", length=10)
      */
     private string $value;
 
@@ -52,7 +57,7 @@ class ShortUrl
     {
         $this->user = $user;
         $this->original = $original;
-        $this->value = hash(self::ALGO, $original);
+        $this->value = $this->hashUrl();
 
         $this->id = (string)Uuid::uuid6();
         $this->createdAt = new DateTimeImmutable();
@@ -93,5 +98,14 @@ class ShortUrl
     public function getValue(): string
     {
         return $this->value;
+    }
+
+    private function hashUrl()
+    {
+        if (empty($this->original)) {
+            throw new LogicException('Original URL is empty');
+        }
+
+        return substr(hash(self::ALGO, $this->original), 0, 8);
     }
 }
