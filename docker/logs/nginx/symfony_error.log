@@ -1,0 +1,69 @@
+2021/01/20 11:56:41 [error] 10#10: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.31.0.1, server: shorty.test, request: "POST /api/short-url HTTP/1.1", upstream: "fastcgi://172.31.0.5:9000", host: "shorty.test"
+2021/01/20 11:57:12 [error] 10#10: *4 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.31.0.1, server: shorty.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.31.0.5:9000", host: "shorty.test"
+2021/01/20 11:57:14 [error] 10#10: *3 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.31.0.1, server: shorty.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.31.0.5:9000", host: "shorty.test", referrer: "http://shorty.test/"
+2021/01/20 11:58:03 [error] 10#10: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.31.0.1, server: shorty.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.31.0.5:9000", host: "127.0.0.1"
+2021/01/20 11:58:04 [error] 10#10: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.31.0.1, server: shorty.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.31.0.5:9000", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2021/01/20 11:58:06 [error] 10#10: *7 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.31.0.1, server: shorty.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.31.0.5:9000", host: "127.0.0.1"
+2021/01/20 11:59:07 [error] 10#10: *11 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.31.0.1, server: shorty.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.31.0.5:9000", host: "shorty.test"
+2021/01/20 12:00:30 [error] 10#10: *13 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.31.0.1, server: shorty.test, request: "GET / HTTP/1.1", upstream: "fastcgi://172.31.0.5:9000", host: "localhost"
+2021/01/20 12:00:31 [error] 10#10: *13 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.31.0.1, server: shorty.test, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.31.0.5:9000", host: "localhost", referrer: "http://localhost/"
+2021/01/20 12:09:14 [error] 10#10: *1 FastCGI sent in stderr: "PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "GET /"" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 136
+PHP message: [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+PHP message: [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+PHP message: [debug] Listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException" stopped propagation of the event "kernel.exception".
+PHP message: [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" was not called for event "kernel.exception".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onK
+2021/01/20 12:09:26 [error] 10#10: *4 FastCGI sent in stderr: "PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "GET /"" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 136
+PHP message: [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+PHP message: [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+PHP message: [debug] Listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException" stopped propagation of the event "kernel.exception".
+PHP message: [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" was not called for event "kernel.exception".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\HttpCacheListener::onK
+2021/01/20 12:09:36 [error] 10#10: *8 FastCGI sent in stderr: "PHP message: [info] Matched route "app_shorturl_create".
+PHP message: [debug] Checking for guard authentication credentials.
+PHP message: [debug] Checking support on guard authenticator.
+PHP message: [debug] Calling getCredentials() on guard authenticator.
+PHP message: [debug] Passing guard token information to the GuardAuthenticationProvider
+PHP message: [debug] SELECT t0.key AS key_1, t0.expires_at AS expires_at_2, t0.user_id AS user_id_3 FROM auth_token t0 WHERE t0.key = ?
+PHP message: [debug] SELECT t0.id AS id_1, t0.created_at AS created_at_2, t0.roles AS roles_3 FROM "user" t0 WHERE t0.id = ?
+PHP message: [info] Guard authentication successful!
+PHP message: [debug] Guard authenticator set no success response: request continues.
+PHP message: [debug] Remember me skipped: it is not configured for the firewall.
+PHP message: [debug] Notified event "debug.security.authorization.vote" to listener "Symfony\Bundle\SecurityBundle\EventListener\VoteListener::onVoterVote".
+PHP message: [debug] Notified event "debug.security.authorization.vote" to listener "Symfony\Bundle\SecurityBundle\EventListener\VoteListener::onVoterVote".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleLis
+2021/01/20 12:09:50 [error] 10#10: *8 FastCGI sent in stderr: "PHP message: [info] Matched route "app_shorturl_jump".
+PHP message: [debug] Checking for guard authentication credentials.
+PHP message: [debug] Checking support on guard authenticator.
+PHP message: [debug] Guard authenticator does not support the request.
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController".
+PHP message: [debug] Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController".
+PHP message: [debug] Notified event "kernel.controller" to listener "Sensio\Bundle
