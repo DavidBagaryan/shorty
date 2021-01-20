@@ -12,7 +12,7 @@ use Ramsey\Uuid\Uuid;
 /**
  * @ORM\Entity(repositoryClass=AuthTokenRepository::class)
  * @ORM\Table(indexes={
- *     @ORM\Index(name="ix__auth_token__user_id", columns={"user_id"}),
+ *     @ORM\Index(name="ix__auth_token__user_id", columns={"user_id"})
  * })
  */
 class AuthToken
